@@ -1,7 +1,6 @@
 import {applyMiddleware, compose, createStore} from 'redux'
 import thunk from 'redux-thunk'
 
-import rootReducer from '../reducers/searchReducer'
 const configureStore = preloadedState => {
     let composeEnhancers
     if (process.env.NODE_ENV === 'production') {
@@ -12,7 +11,6 @@ const configureStore = preloadedState => {
         /* eslint-enable */
     }
     const store = createStore(
-        rootReducer,
         applyMiddleware(thunk)
     )
     return store
