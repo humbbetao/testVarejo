@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.jsx',
     output: {
         path: __dirname + '/public',
-        filename: 'bundle.js'
+        filename: 'bundle.js'mkdar
     },
     devServer: {
         port: 8080,
@@ -43,6 +43,5 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
         }),
-        
     ]
 }
