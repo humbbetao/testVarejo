@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 import List from './List'
 import { search } from '../actions/search'
+import PaginationList from './PaginationList'
 
 class Body extends PureComponent {
   moreThanOne = (products) => {
@@ -18,6 +19,7 @@ class Body extends PureComponent {
       <article className="container">
         <h4 className="productsNumber">{numberProductsText}</h4>
         <List/>
+        <PaginationList/>
       </article>
     )
   }

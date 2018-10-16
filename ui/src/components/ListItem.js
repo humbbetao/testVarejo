@@ -16,7 +16,6 @@ class ListItem extends PureComponent {
         <div className="priceProduct">
           <span className="oldPrice">{item.oldPrice}</span> por <span className="newPrice"> {item.newPrice}</span>
         </div>
-
       </div>
     )
   }

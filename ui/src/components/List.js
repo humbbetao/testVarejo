@@ -2,8 +2,6 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import 'react-table/react-table.css'
-
 import { search } from '../actions/search'
 import ListItem from './ListItem'
 
