@@ -1,0 +1,11 @@
+.header{
+    width: 100%
+}
+.search-box {
+    float: right;
+}
+
+.title{
+    display: flex;
+    flex-grow: 2;
+}
