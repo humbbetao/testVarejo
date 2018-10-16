@@ -2,33 +2,37 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import 'react-table/react-table.css'
+
 import { search } from '../actions/search'
 import ListItem from './ListItem'
 
+
 class List extends PureComponent {
   componentDidMount() {
-    this.props.search('')
+    this.props.search()
   }
 
   render() {
-    const { result } = this.props
+    const { products } = this.props
     return (
-      <div className={'container'}>
-        {/*{(result || []).map((item, idx) => <ListItem key={idx} item={item}/>)}*/}
-      </div>
+      <React.Fragment>
+        {(products || []).map((item, idx) => <ListItem key={idx} item={item}/>)}
+      </React.Fragment>
     )
   }
 }
 
-List.defaultProps = { result: [], query: '' }
-List.propsTypes = {
-  result: PropTypes.object,
-  query: PropTypes.String
+List.defaultProps = { products: [], query: '' }
+List.propTypes = {
+  products: PropTypes.array,
+  query: PropTypes.string,
+  search: PropTypes.func
 }
 
 const mapStateToProps = state => ({
-  result: state.result,
-  query: state.query
+  products: state.result.products,
+  query: state.result.query
 })
 const mapDispatchToProps = dispatch => {
   return {

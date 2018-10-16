@@ -1,14 +1,45 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+
 import List from './List'
+import { search } from '../actions/search'
 
 class Body extends PureComponent {
+  moreThanOne = (products) => {
+    return products.length > 1 ? 's' : ''
+  }
+
   render() {
+    const { products } = this.props
+    const moreThanOne = this.moreThanOne(products)
+    const numberProductsText = `${products.length || 'Nenhum'} Produto${moreThanOne} Encontrado${moreThanOne}`
     return (
-      <div className={'container'}>
+      <article className="container">
+        <h4 className="productsNumber">{numberProductsText}</h4>
         <List/>
-      </div>
+      </article>
     )
   }
 }
 
-export default Body
+Body.defaultProps = {
+  products: []
+}
+
+Body.propTypes = {
+  query: PropTypes.string,
+  search: PropTypes.func,
+  products: PropTypes.array
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    search: query => dispatch(search(query))
+  }
+}
+const mapStateToProps = state => ({
+  products: state.result.products,
+  query: state.result.query
+})
+export default connect(mapStateToProps, mapDispatchToProps)(Body)

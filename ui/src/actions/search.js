@@ -1,26 +1,22 @@
 import axios from 'axios'
 import _ from 'lodash'
 
-export const search = (query) => dispatch => {
-  const url = 'http://localhost:3000/api/list/'
-  const urlFull = _.isEmpty(query) ? url : `${url}${query}`
-  axios({
-    method: 'POST',
-    url: urlFull,
-    headers: { 'crossDomain': true, 'Content-Type': 'application/json' }
-  })
-    .then(response =>
-      console.log(response)
+export const search = (query = '') => dispatch => {
+  const baseUrl = 'http://localhost:3000/api/list'
+  const url = !_.isEmpty(query) ? `${baseUrl}/?name=${query}` : baseUrl
+  axios.get(url)
+    .then(
+      response =>
+        dispatch({
+          type: 'SEARCH',
+          payload: response.data,
+          query: query
+        }),
+      error =>
+        dispatch({
+          type: 'ERROR',
+          payload: error.data,
+          query: query
+        })
     )
-    .catch(error =>
-      dispatch({
-        type: 'SEARCH',
-        payload: response.data,
-        query: query
-      })
-    )
-}
-
-export function fetchOffers(dispatch) {
-
 }

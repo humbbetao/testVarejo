@@ -1,11 +1,11 @@
-export default function (state = { result: [], query: '' }, action) {
+export default function (state = { products: [], query: '' }, action) {
   console.log(action)
   switch (action.type) {
-    case 'SEARCH':
-      return { result: JSON.parse(action.payload), query: action.text }
-    case 'ERROR':
-      return { result: [], query: action.text }
-    default:
-      return state
+  case 'SEARCH':
+    return { products: action.payload, query: action.query }
+  case 'ERROR':
+    return { products: [], query: action.query }
+  default:
+    return state
   }
 }

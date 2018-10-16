@@ -5,7 +5,7 @@ import Body from './Body'
 class MainScreen extends PureComponent {
   render() {
     return (
-      <div className={'container'}>
+      <div>
         <Header/>
         <Body/>
       </div>

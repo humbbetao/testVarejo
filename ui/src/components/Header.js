@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-
+import _ from 'lodash'
 import { search } from '../actions/search'
 
 class Header extends PureComponent {
@@ -11,8 +11,9 @@ class Header extends PureComponent {
       text: ''
     }
   }
+
   handleOnSubmit = (event) => {
-    event.preventDefault() // Let's stop this event.
+    event.preventDefault()
     event.stopPropagation()
     this.props.search(this.state.text)
   }
@@ -21,21 +22,23 @@ class Header extends PureComponent {
     return (
       <div className="nav navbar-inverse bg-inverse">
         <div className="navbar header">
-          <h1 className="title">mmartam</h1>
-          <form onSubmit={this.handleOnSubmit} className="search-box">
-            <div className="form-group">
-              <input type="text" className="form-control" id="exampleInputEmail1"
-                     aria-describedby="emailHelp" placeholder="Enter email"
+          <div className="resizing">
+            <h4 className="title">mmartam</h4>
+            <form onSubmit={this.handleOnSubmit} className="search-box form-group">
+              <input type="text" className="form-control"
+                     aria-describedby="Pesquise Aqui" placeholder="Pesquise Aqui"
                      value={this.state.text}
                      onChange={(evt) => this.setState({
                        text: evt.target.value
                      })
                      }/>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-        <div className={'container'}>
-          {this.props.query}
+        <div className="searchText">
+          <h2 className="searchQuery resizing">
+            {!_.isEmpty(this.props.query) ? this.props.query : 'Lista de Produtos'}
+          </h2>
         </div>
       </div>
     )
@@ -44,9 +47,9 @@ class Header extends PureComponent {
 
 
 Header.defaultProps = {}
-Header.propsTypes = {
-  search: PropTypes.func,
-  query: PropTypes.String
+Header.propTypes = {
+  query: PropTypes.string,
+  search: PropTypes.func
 }
 
 const mapDispatchToProps = dispatch => {
@@ -55,7 +58,6 @@ const mapDispatchToProps = dispatch => {
   }
 }
 const mapStateToProps = state => ({
-  result: state.result,
-  query: state.query
+  query: state.result.query
 })
 export default connect(mapStateToProps, mapDispatchToProps)(Header)
