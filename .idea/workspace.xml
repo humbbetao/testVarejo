@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e74b3982-3e7d-4a56-ad57-534f9b792f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/src/components/PaginationList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/components/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/ListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/public/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -88,7 +81,7 @@
           <entry key="html" value="1" />
           <entry key="js" value="30" />
           <entry key="json" value="6" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -97,7 +90,7 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="30" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -106,7 +99,7 @@
           <entry key="html" value="10" />
           <entry key="js" value="1631" />
           <entry key="json" value="83" />
-          <entry key="txt" value="323" />
+          <entry key="txt" value="625" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -115,7 +108,7 @@
           <entry key="HTML" value="10" />
           <entry key="JSON" value="83" />
           <entry key="JavaScript" value="1631" />
-          <entry key="PLAIN_TEXT" value="323" />
+          <entry key="PLAIN_TEXT" value="625" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -209,30 +202,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/components/PaginationList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="184">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="5" column="7481" selection-start-line="5" selection-start-column="7481" selection-end-line="5" selection-end-column="7481" />
-              <folding>
-                <element signature="e#57526#57726#2" expanded="true" />
-                <element signature="e#57934#58083#2" expanded="true" />
-                <element signature="e#58585#58731#2" expanded="true" />
-                <element signature="e#59032#59198#1" expanded="true" />
-                <element signature="e#70814#71057#2" expanded="true" />
-                <element signature="e#71924#72173#2" expanded="true" />
-                <element signature="e#99236#99426#2" expanded="true" />
-                <element signature="e#99472#99662#2" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -284,7 +270,6 @@
         <option value="$PROJECT_DIR$/ui/src/components/Title.js" />
         <option value="$PROJECT_DIR$/api/package.json" />
         <option value="$PROJECT_DIR$/ui/webpack.config.js" />
-        <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/api/config/cors.js" />
         <option value="$PROJECT_DIR$/ui/package.json" />
         <option value="$PROJECT_DIR$/api/api/list/listService.js" />
@@ -303,6 +288,7 @@
         <option value="$PROJECT_DIR$/ui/src/components/Pagination.js" />
         <option value="$PROJECT_DIR$/ui/src/components/Body.js" />
         <option value="$PROJECT_DIR$/ui/src/components/PaginationList.js" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -339,24 +325,6 @@
             <path>
               <item name="testVarejo" type="b2602c69:ProjectViewProjectNode" />
               <item name="testVarejo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testVarejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testVarejo" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testVarejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testVarejo" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testVarejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testVarejo" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -448,12 +416,12 @@
       <workItem from="1539644592558" duration="1674000" />
       <workItem from="1539652558325" duration="1474000" />
       <workItem from="1539656653254" duration="15941000" />
-      <workItem from="1539697744247" duration="14500000" />
+      <workItem from="1539697744247" duration="14821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36193000" />
+    <option name="totallyTimeSpent" value="36514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -552,13 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -759,8 +720,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/components/PaginationList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="184">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
